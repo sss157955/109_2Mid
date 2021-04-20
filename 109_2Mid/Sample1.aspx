@@ -19,11 +19,14 @@
                 <asp:TextBox ID="tb_Pass" runat="server" Height="15px" Width="200px" TextMode="Password"></asp:TextBox>.
                 </br>
                 <asp:Label ID="lb_rbg_Interest" runat="server" Text="興趣(單選)" Font-Size="X-Large"></asp:Label>
-                <asp:RadioButton ID="cb_book" runat="server" Text="看書" />
-                <asp:RadioButton ID="cb_game" runat="server" Text="打電動" />
-                <asp:RadioButton ID="cb_other" runat="server" Text="其他" />
+                <asp:RadioButton ID="rb_book" runat="server" Text="看書" Checked="True" />
+                <asp:RadioButton ID="rb_game" runat="server" Text="打電動" />
+                <asp:RadioButton ID="rb_other" runat="server" Text="其他" />
                 </br>
                 <asp:Label ID="otherurl" runat="server" Text="其他連結" Font-Size="X-Large"></asp:Label>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://aws.amazon.com/tw/" ImageUrl="~/aws-brands.svg" Height="30px" Width="30px"></asp:HyperLink>
+                <br />
+                <asp:Button ID="bt_Next" runat="server" Text="送出" ButtonOnclick="bt_Next_Click" Width="80px" Height="30px" PostBackUrl="~/Sample1Com.aspx" />
 
             </div>
         </div>

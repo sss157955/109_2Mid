@@ -69,31 +69,31 @@ namespace _109_2Mid
         protected global::System.Web.UI.WebControls.Label lb_rbg_Interest;
 
         /// <summary>
-        /// cb_book 控制項。
+        /// rb_book 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton cb_book;
+        protected global::System.Web.UI.WebControls.RadioButton rb_book;
 
         /// <summary>
-        /// cb_game 控制項。
+        /// rb_game 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton cb_game;
+        protected global::System.Web.UI.WebControls.RadioButton rb_game;
 
         /// <summary>
-        /// cb_other 控制項。
+        /// rb_other 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton cb_other;
+        protected global::System.Web.UI.WebControls.RadioButton rb_other;
 
         /// <summary>
         /// otherurl 控制項。
@@ -103,5 +103,23 @@ namespace _109_2Mid
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label otherurl;
+
+        /// <summary>
+        /// HyperLink1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+
+        /// <summary>
+        /// bt_Next 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bt_Next;
     }
 }
