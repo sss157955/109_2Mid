@@ -11,23 +11,22 @@ namespace _109_2Mid {
 
         }
 
-        protected void btn_Sub_Click(object sender, EventArgs e)
-        {
-            string result ="";
-            result += ddl_Area.SelectedValue+"<br/>";
-            result += ddl_Place.SelectedValue + "<br/>";
-            result += tb_Name.Text+"<br/>";
-            if (tb_Des.Text != "")
-            {
-                result += tb_Des.Text;
-            }
-
-            lb_Msg.Text = result;
-        }
 
         protected void ddl_Area_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            if (ddl_Area.SelectedIndex == 1)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    ddl_Place.Items[i].Enabled = false;
+                }
+                for (int i = 3; i < 6; i++)
+                {
+                    ddl_Place.Items[i].Enabled = true;
+                }
+
+            }
+            
             
            
             
@@ -41,14 +40,28 @@ namespace _109_2Mid {
 
         protected void rbl_Res_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rbl_Res.SelectedIndex == 1)
-            {
-                tb_Des.Visible = true;
-            }
-            else
+            if (rbl_Res.SelectedIndex == 0)
             {
                 tb_Des.Visible = false;
             }
+            else
+            {
+                tb_Des.Visible = true;
+            }
+        }
+
+        protected void btn_Sub_Click1(object sender, EventArgs e)
+        {
+            lb_Msg.Text += ddl_Area.SelectedValue + "<br/>" + ddl_Place.SelectedValue+"<br/>";
+            if (tb_Name.Text != "")
+            {
+                lb_Msg.Text += tb_Name.Text+"<br/>";
+            }
+            if (tb_Des.Text != "")
+            {
+                lb_Msg.Text += tb_Des.Text+ "<br/>";
+            }
+            
         }
     }
 }
