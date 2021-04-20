@@ -10,6 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div><h1>會員註冊</h1></div>
+            <div>
+                <asp:Label ID="lb_Acc" runat="server" Text="會員帳號 Font-Size="X-Large"></asp:Label>
+                <asp:TextBox ID="tb_Acc" runat="server" Height="15px" Width="200px"></asp:TextBox>
+                <asp:Label ID="lb_Pass" runat="server" Text="密碼" Font-Size="X-Large"></asp:Label>
+                <asp:TextBox ID="tb_Pass" runat="server" Height="15px" Width="200px" TextMode="Password"></asp:TextBox>
+            </div>
         </div>
     </form>
 </body>
