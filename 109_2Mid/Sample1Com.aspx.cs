@@ -10,20 +10,23 @@ namespace _109_2Mid {
         protected void Page_Load(object sender, EventArgs e) {
             
             lb_Res.Text = Request.Form.Get("tb_Acc")+"<br/>"+ Request.Form.Get("tb_Pass") + "<br/>";
-            
-            if (Request.Form.Get("rb_book")=="true")
+
+            if (Request.Form.Get("rb_book") != null)
             {
-                lb_Res.Text += "看書"+ "<br/>";
+                lb_Res.Text += "看書" + "<br/>";
             }
-            if (Request.Form.Get("rb_game") == "true")
+            if (Request.Form.Get("rb_game") != null)
             {
-                lb_Res.Text += "打電動"+ "<br/>";
+                lb_Res.Text += "打電動" + "<br/>";
             }
-            if (Request.Form.Get("rb_other") == "true")
+
+            if (Request.Form.Get("rb_other") != null)
             {
                 lb_Res.Text += "其他"+ "<br/>";
             }
-            
+
+
+
         }
     }
 }
